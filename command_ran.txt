@@ -1,2 +1,11 @@
 conda create --name pmade python=3.11
 
+# git commands
+git init
+git add .
+git commit -m "First Commit"
+git branch -M main
+git remote add origin https://github.com/abhi24112/P-MADE.git
+git push -u origin main
+
+
