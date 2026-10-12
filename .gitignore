@@ -1,0 +1,125 @@
+# Python bytecode and caches
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.pyre/
+.coverage
+.coverage.*
+htmlcov/
+
+# Virtual environments and local environment files
+.venv/
+venv/
+env/
+ENV/
+.env
+.env.*
+!.env.example
+
+# Local IDE and OS files
+.vscode/
+.idea/
+*.code-workspace
+.DS_Store
+Thumbs.db
+Desktop.ini
+GEMINI.md
+
+# Logs and local runtime output
+logs/
+*.log
+
+# Raw and generated datasets. Keep reports and data-versioning metadata tracked.
+dataset/raw/
+dataset/interim/
+dataset/reports/
+dataset/*.csv
+dataset/*.parquet
+dataset/*.feather
+dataset/*.pkl
+dataset/*.pickle
+!dataset/reports/
+!dataset/reports/**
+!dataset/**/*.dvc
+
+# Trained models and generated model artifacts (tracked for container deployment)
+!models/
+!models/*.skops
+!models/*.dvc
+!models/**/.gitignore
+*.joblib
+*.pickle
+*.onnx
+*.pt
+*.pth
+
+# MLflow local tracking store and artifacts
+mlruns/
+mlflow.db
+mlflow.db-*
+
+# Local databases and generated exports
+*.db
+*.sqlite
+*.sqlite3
+*.parquet
+*.feather
+
+# Jupyter generated files and checkpoints
+.ipynb_checkpoints/
+
+# Build, packaging, and distribution artifacts
+build/
+dist/
+*.egg-info/
+.eggs/
+pip-wheel-metadata/
+poetry.lock
+
+# Type-checker and test tooling artifacts
+.tox/
+.nox/
+*.pytype/
+ruff-report.json
+
+# Documents
+Doc/interview_Questions
+
+# test files
+test.ipynb
+database/__pycache__/
+
+# Terraform & Cloud Infrastructure
+**/.terraform/
+.terraform/
+
+# Terraform state files (CRITICAL: contain plaintext database passwords and secrets)
+*.tfstate
+*.tfstate.*
+*.tfstate.backup
+
+# Sensitive variable files containing passwords/tokens
+*.tfvars
+*.tfvars.json
+!*.tfvars.example
+!*.tfvars.sample
+
+# Lock files created during runtime
+*.tflock
+
+# Crash logs
+crash.log
+crash.*.log
+
+# Local development override files
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# CLI configuration files
+.terraformrc
+terraform.rc
